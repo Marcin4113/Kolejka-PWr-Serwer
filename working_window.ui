@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkingWindow</class>
+ <widget class="QDialog" name="WorkingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(49, 49, 49);</string>
+  </property>
+  <widget class="QPushButton" name="ButtonFree">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(40, 80, 40);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Wolne</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtoBusy">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(80, 40, 40);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Zajęte</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonBreak">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(80, 80, 40);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Przerwa</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonExit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>310</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(80, 80, 80);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }</string>
+   </property>
+   <property name="text">
+    <string>Wyjście</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelPositionInQueue">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Pozycja w kolejce: Stanowisko nie w kolejce</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

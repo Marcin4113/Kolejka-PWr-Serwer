@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>System Kolejki PWr</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(49, 49, 49)</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>280</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget::item {
+	background-color:rgb(60, 60, 60); 
+	color: white;
+}
+
+QListWidget::item:disabled {
+	background-color:rgb(40, 40, 40); 
+	color: silver;
+}
+
+QListWidget::item:hover {
+	background-color:rgb(100, 100, 100); 
+	color: white;
+}
+
+QListWidget::item:selected {
+	background-color:rgb(180, 180, 180); 
+text-align: center;
+	color: black;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonNext">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>199</x>
+      <y>347</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(80, 80, 80);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }
+
+QPushButton:disabled {
+	background-color: rgb(70, 70, 70);
+	color: silver;
+}</string>
+    </property>
+    <property name="text">
+     <string>Dalej</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonExit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>347</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(80, 80, 80);
+	color: white;
+}
+
+QPushButton:hover {
+     background-color: rgb(100, 100, 100);
+	color: white;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Wyjście</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,19 +1,24 @@
-#include "mainwindow.h"
+#include "client_connection.h"
+#include "main_window.h"
 #include <QApplication>
-#include "server_connection.h"
+
+/*TODO: ZABEZPIECZYĆ SYTUACJE GDY 
+STANOWISKO ZMIENIA STATUS A SERWER JEST WYŁĄCZONY*/
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    MainWindow window;
-	ServerConnection connection(&window);
+	MainWindow window;
+	ClientConnection connection("", 0, &window);
 	
-    window.show();
-	connection.start();
+	connection.get_workplaces();
 	
+	window.show();
 	int status = app.exec();
+	
 	//zakończenie działania wątku z połączeniem
-	connection.terminate();
+	//connection.terminate();
 	
     return status;
+	//return app.exec();
 }
